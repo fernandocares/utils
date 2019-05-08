@@ -1,0 +1,15 @@
+
+Formas de buscar um atributo da DOM
+
+var input = document.querySelector('div#app input');
+var input = document.getElementById('nome');
+
+var input = document.getElementsByClassName('nome')[0];
+
+
+// O querySelector sempre retornar um único elemento, no caso primeiro que ele achar
+var input = document.querySelector('input[name=nome]');
+var input = document.querySelector('input');
+
+// Usando o sufixo all ele irá trazer todos que satisfazerem a condição
+var input = document.querySelectorAll('input');
