@@ -1,5 +1,5 @@
 
-Formas de buscar um atributo da DOM
+//Formas de buscar um atributo da DOM
 
 var input = document.querySelector('div#app input');
 var input = document.getElementById('nome');
@@ -13,3 +13,45 @@ var input = document.querySelector('input');
 
 // Usando o sufixo all ele irá trazer todos que satisfazerem a condição
 var input = document.querySelectorAll('input');
+
+
+// Executando funções através de eventos dos elementos
+var inputElement = document.querySelector('input[name=nome]');
+var btnElement = document.querySelector('button.botao');
+
+btnElement.onclick = function() {
+    var text = inputElement.value;
+
+    alert(text);
+}
+
+
+// Adicionando e removendo os elementos
+// <div id="app">
+//   <input id="nome" type="text">
+// </div>
+var linkElement = document.createElement('a');
+
+linkElement.setAttribute('href', 'https://www.devmedia.com.br/aprender-javascript/');
+
+var textElemnt = document.createTextNode('Acesar site da DevMedia');
+linkElement.appendChild(textElemnt);
+
+var containerElement = document.querySelector('#app');
+containerElement.appendChild(linkElement);
+
+var inputElement = document.querySelector('#nome');
+containerElement.removeChild(inputElement);
+
+
+
+// Entendendo o que é e como funcionam as promises
+// https://medium.com/trainingcenter/entendendo-promises-de-uma-vez-por-todas-32442ec725c2
+
+
+// V8 Engine - É basicamente uma máquina virtual javascript que é desenvolvida em c++. 
+// Esta engine compila o código JavaScript para o formato nativo de máquina antes de executá-lo
+
+// Javascript Array.push is 945x faster than Array.concacat
+// https://dev.to/uilicious/javascript-array-push-is-945x-faster-than-array-concat-1oki
+

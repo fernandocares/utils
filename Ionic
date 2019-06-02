@@ -1,0 +1,13 @@
+Estudo das principais mudanças que aconteceram na versão 4 do IONIC
+
+vídeo: https://www.youtube.com/watch?v=uM8q0K43qcY
+artigo: https://ionicthemes.com/tutorials/about/ionic-4-vs-ionic-3
+
+	- Performance
+	- Suporte ao PWA
+	- Suporte aos Web Components - https://www.webcomponents.org/introduction
+	- Possibilidade de usar outros frameworks como Vue e React 
+	- Navegação somente por rotas(parâmetros)
+		- Ionic 3 funcionava com empilhamento
+		- NavController e ion-nav ficaram obsoletos
+		- routerLink

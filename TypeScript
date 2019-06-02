@@ -1,0 +1,33 @@
+
+// Artigo sobre tipagem no TypeScript:
+// https://medium.com/@oieduardorabelo/typescript-entendendo-a-nota%C3%A7%C3%A3o-de-tipos-9e8c1c89ef62
+
+// Fazendo um join em uma lista
+
+function joinNumbers(...nums: number[]): string {
+    return nums.join('-');
+}
+joinNumbers(1, 2, 3); 
+
+// Retorno: '1-2-3'
+
+
+
+//Parâmetros opcionais
+function f1(x?: number) { }
+f1(); // OK
+f1(undefined); // OK
+f1(123); // OK
+
+function f2(x: undefined | number) { }
+f2(); // error
+f2(undefined); // OK
+f2(123); // OK
+
+
+
+// Em muitas linguagens de programação, null faz parte de todos os tipos. Por exemplo, sempre que o tipo de parâmetro for String em Java, 
+// você poderá passar null e o Java não irá reclamar.
+
+// Por outro lado, no TypeScript, undefined e null são tratados separadamente, pelo chamado tipos separados (disjoint types).
+// Você precisa de um tipo de união como undefined | string e null | string, se você quiser permitir essas operações.
