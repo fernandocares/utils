@@ -11,3 +11,5 @@ artigo: https://ionicthemes.com/tutorials/about/ionic-4-vs-ionic-3
 		- Ionic 3 funcionava com empilhamento
 		- NavController e ion-nav ficaram obsoletos
 		- routerLink
+
+Começando um projeto do 0 em Ionic 4: https://medium.com/nycdev/create-a-full-mobile-app-with-ionic4-2849df0d47c3
